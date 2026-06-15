@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BJRCON - Barreto Junior Construções. Mais de 10 anos realizando o sonho da casa própria em Extremoz/RN. Casas Standard, Gold e Premier com parcelas a partir de R$ 590,00 e financiamento pelo Minha Casa Minha Vida.">
+  <meta property="og:title" content="BJRCON - Barreto Junior Construções">
+  <meta property="og:description" content="Mais de 10 anos e +6.000 unidades entregues em Extremoz/RN. Casas com parcelas a partir de R$ 590,00 e financiamento pelo Minha Casa Minha Vida.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/gold-1.jpg">
+  <title>BJRCON - Barreto Junior Construções | Casas em Extremoz/RN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/icone.png" alt="Barreto Jr. Construções">
+        <span class="logo-text">Barreto Jr.<small>Construções</small></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="active">Início</a>
+        <a href="sobre.html">Sobre nós</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">Empreendimentos <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="empreendimentos/sportclub.html">Sport Clube Extremoz</a>
+            <a href="empreendimentos/2014.html">Linha do tempo: 2014</a>
+            <a href="empreendimentos/2015.html">2015</a>
+            <a href="empreendimentos/2017.html">2017</a>
+            <a href="empreendimentos/2018.html">2018</a>
+            <a href="empreendimentos/2020.html">2020</a>
+            <a href="empreendimentos/2021.html">2021</a>
+            <a href="empreendimentos/2022.html">2022</a>
+            <a href="empreendimentos/2023.html">2023</a>
+            <a href="empreendimentos/2024.html">2024</a>
+          </div>
+        </div>
+        <a href="#imoveis">Imóveis</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-tag"><i class="fas fa-home"></i> Construtora em Extremoz/RN</span>
+        <h1>O lar ideal para a <span class="hero-highlight">sua família</span> está aqui</h1>
+        <p class="hero-sub">Há mais de 10 anos realizando o sonho da casa própria, com parcelas a partir de <strong>R$ 590,00*</strong> e financiamento pelo programa Minha Casa Minha Vida.</p>
+        <p class="hero-disclaimer">*Parcelas sujeitas à análise de crédito e enquadramento no programa Minha Casa Minha Vida.</p>
+        <div class="hero-actions">
+          <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="btn btn-gold btn-lg" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Simule seu financiamento
+          </a>
+          <a href="#imoveis" class="btn btn-outline-light btn-lg">Conheça os imóveis</a>
+        </div>
+        <ul class="hero-features">
+          <li><i class="fas fa-check-circle"></i> Minha Casa Minha Vida</li>
+          <li><i class="fas fa-check-circle"></i> Use seu FGTS</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/gold-1.jpg" alt="Casa Gold da BJRCON em Extremoz/RN" fetchpriority="high">
+        <div class="hero-float-card">
+          <i class="fas fa-key"></i>
+          <div>
+            <strong>+6.000 famílias</strong>
+            <span>já receberam suas chaves</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Números -->
+  <section class="stats-section" aria-label="Nossos números">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-count="10" data-suffix="+">10+</span>
+          <span class="stat-label">Anos de história</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="6000" data-prefix="+">+6.000</span>
+          <span class="stat-label">Unidades entregues</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="200" data-suffix=" mil m²">200 mil m²</span>
+          <span class="stat-label">De área construída</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="9">9</span>
+          <span class="stat-label">Bairros desenvolvidos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imóveis -->
+  <section class="imoveis-section section-padding" id="imoveis">
+    <div class="container">
+      <div class="section-title">
+        <h2>Conheça Nossos Imóveis</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Localizados no melhor bairro planejado da região</p>
+      </div>
+      <div class="imoveis-grid">
+
+        <article class="imovel-card">
+          <a href="imoveis/casa-padrao.html" class="imovel-card-media">
+            <img src="assets/images/padrao-frente.jpeg" alt="Casa Standard - Sport Clube, Extremoz/RN" loading="lazy">
+            <span class="imovel-badge">Linha Standard</span>
+          </a>
+          <div class="imovel-card-body">
+            <h3><a href="imoveis/casa-padrao.html">Casa Standard</a></h3>
+            <p class="imovel-local"><i class="fas fa-map-marker-alt"></i> Sport Clube — Extremoz/RN</p>
+            <ul class="imovel-specs">
+              <li><i class="fas fa-ruler-combined"></i> 64,24m² construídos</li>
+              <li><i class="fas fa-bed"></i> 2 quartos</li>
+              <li><i class="fas fa-car"></i> 1 vaga de garagem</li>
+            </ul>
+            <div class="imovel-card-footer">
+              <div class="imovel-price">
+                <span>Parcelas a partir de</span>
+                <strong>R$ 590,00</strong>
+              </div>
+              <a href="imoveis/casa-padrao.html" class="btn btn-navy btn-sm">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="imovel-card imovel-card-featured">
+          <a href="imoveis/casa-gold.html" class="imovel-card-media">
+            <img src="assets/images/gold-1.jpg" alt="Casa Gold - Sport Clube, Extremoz/RN" loading="lazy">
+            <span class="imovel-badge imovel-badge-gold">Linha Gold</span>
+          </a>
+          <div class="imovel-card-body">
+            <h3><a href="imoveis/casa-gold.html">Casa Gold</a></h3>
+            <p class="imovel-local"><i class="fas fa-map-marker-alt"></i> Sport Clube — Extremoz/RN</p>
+            <ul class="imovel-specs">
+              <li><i class="fas fa-ruler-combined"></i> 86,04m² construídos</li>
+              <li><i class="fas fa-bed"></i> 2 quartos (1 suíte)</li>
+              <li><i class="fas fa-car"></i> 2 vaga de garagem</li>
+            </ul>
+            <div class="imovel-card-footer">
+              <div class="imovel-price">
+                <span>Parcelas a partir de</span>
+                <strong>R$ 590,00</strong>
+              </div>
+              <a href="imoveis/casa-gold.html" class="btn btn-navy btn-sm">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="imovel-card">
+          <a href="imoveis/casa-premier.html" class="imovel-card-media">
+            <img src="assets/images/premier-frente.jpg" alt="Casa Premier - Sport Clube, Extremoz/RN" loading="lazy">
+            <span class="imovel-badge imovel-badge-premier">Linha Premier</span>
+          </a>
+          <div class="imovel-card-body">
+            <h3><a href="imoveis/casa-premier.html">Casa Premier</a></h3>
+            <p class="imovel-local"><i class="fas fa-map-marker-alt"></i> Sport Clube — Extremoz/RN</p>
+            <ul class="imovel-specs">
+              <li><i class="fas fa-bed"></i> 3 quartos (suíte + closet)</li>
+              <li><i class="fas fa-car"></i> Garagem para 2 carros</li>
+              <li><i class="fas fa-gem"></i> Alto padrão de acabamento</li>
+            </ul>
+            <div class="imovel-card-footer">
+              <div class="imovel-price">
+                <span>Investimento</span>
+                <strong>Sob consulta</strong>
+              </div>
+              <a href="imoveis/casa-premier.html" class="btn btn-navy btn-sm">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre-section section-padding" id="sobre">
+    <div class="container">
+      <div class="sobre-content">
+        <div class="sobre-text">
+          <span class="sobre-tag">Quem Somos</span>
+          <h2>Sobre nós</h2>
+          <div class="sobre-divider"></div>
+          <p>Há mais de 10 anos, o Grupo Barreto Junior atua nos segmentos de construção civil, incorporação e urbanização, transformando sonhos em realidade e contribuindo para o desenvolvimento de comunidades. Referência no Rio Grande do Norte e benchmark no Nordeste, a empresa une experiência, inovação e compromisso para entregar empreendimentos de qualidade, gerando oportunidades e impactando positivamente a vida de milhares de famílias.</p>
+          <a href="sobre.html" class="btn btn-outline">Saiba mais</a>
+        </div>
+        <div class="sobre-img">
+          <img src="assets/images/boneco-bjr-semfundo.png" alt="Mascote BJRCON" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destaques -->
+  <section class="destaques-section section-padding">
+    <div class="container">
+      <div class="destaques-grid">
+        <div class="destaque-item">
+          <div class="destaque-icon"><i class="fas fa-house-circle-check" aria-hidden="true"></i></div>
+          <h3>Minha Casa Minha Vida</h3>
+          <p>Especialista no programa, atendendo as faixas 1, 2, 3 e 4.</p>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-icon"><i class="fas fa-key" aria-hidden="true"></i></div>
+          <h3>+6.000 Unidades Entregues</h3>
+          <p>Cada unidade construída pensando na melhor experiência do cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financiamento -->
+  <section class="financiamento-section section-padding">
+    <div class="container">
+      <div class="fin-header">
+        <h2>Condições especiais de financiamento para facilitar a compra do seu imóvel!</h2>
+      </div>
+      <div class="fin-grid">
+        <div class="fin-card">
+          <img src="assets/images/icon-renda.png" alt="Crédito facilitado" class="fin-card-icon" loading="lazy">
+          <p><strong>Crédito facilitado para autônomos e para quem possui renda formal,</strong> com análise simplificada, condições especiais e taxas competitivas para ajudar você a conquistar sua casa própria.</p>
+        </div>
+        <div class="fin-card">
+          <img src="assets/images/icon-subsidio.png" alt="Subsídio" class="fin-card-icon" loading="lazy">
+          <p>Se sua renda é menor que R$ 4.000, você pode ter direito ao subsídio do governo.</p>
+        </div>
+        <div class="fin-card">
+          <img src="assets/images/icon-fgts.png" alt="FGTS" class="fin-card-icon" loading="lazy">
+          <p>Use seu FGTS como entrada ou para amortizar suas parcelas.</p>
+        </div>
+      </div>
+      <div class="fin-cta">
+        <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="btn btn-gold btn-lg" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Simule seu financiamento
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="depoimentos-section section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Depoimentos</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Quem comprou, recomenda</p>
+      </div>
+      <div class="depoimentos-grid">
+        <div class="depoimento-card">
+          <div class="depoimento-avatar"><i class="fas fa-user"></i></div>
+          <h4>Casciano</h4>
+          <p class="depoimento-role">Cliente BJRCON</p>
+          <p class="depoimento-text">Veja no vídeo como foi a experiência do Casciano ao conquistar a casa própria com a BJRCON.</p>
+          <a href="https://www.youtube.com/@barretojr.construcoes3534" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            <i class="fab fa-youtube"></i> Assistir depoimento
+          </a>
+        </div>
+        <div class="depoimento-card">
+          <div class="depoimento-avatar"><i class="fas fa-user"></i></div>
+          <h4>Lorenna</h4>
+          <p class="depoimento-role">Cliente BJRCON</p>
+          <p class="depoimento-text">A Lorenna conta como realizou o sonho da casa própria. Assista ao depoimento completo no nosso canal.</p>
+          <a href="https://www.youtube.com/@barretojr.construcoes3534" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            <i class="fab fa-youtube"></i> Assistir depoimento
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="map-section">
+    <div class="section-title" style="padding-top: 60px;">
+      <h2>Onde Estamos Localizados</h2>
+      <div class="divider"></div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.5694403336197!2d-35.277385026939285!3d-5.686404646636458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3a8e7d939d28b%3A0xdb83b2a06de80baa!2sBarreto%20Junior%20Constru%C3%A7%C3%B5es!5e1!3m2!1spt-BR!2sbr!4v1781190617278!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da BJRCON no Google Maps"></iframe>
+    <div class="address-bar">
+      <i class="fas fa-map-marker-alt"></i>
+      Av. Alcides Araújo, 1001 - Loteamento Moinho dos Ventos, Extremoz - RN, 59575-000, Brasil
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>BJRCON</h4>
+          <p>Barreto Junior Construções. Mais de 10 anos realizando o sonho da casa própria no Rio Grande do Norte.</p>
+          <div class="footer-social">
+            <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/construcoesbarretojr/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/barretojuniorconstrucoes/" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@barretojr.construcoes3534" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="#imoveis">Imóveis</a>
+            <a href="empreendimentos/sportclub.html">Empreendimentos</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone footer-icon"></i> (84) 3015-7888</p>
+          <p><i class="fas fa-envelope footer-icon"></i> analisedefinanciamentosbjr@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt footer-icon"></i> Av. Alcides Araújo, 1001 - Loteamento Moinho dos Ventos, Extremoz - RN</p>
+          <p><i class="fas fa-clock footer-icon"></i> Seg–Sex: 07h às 18h | Sáb e feriados: 08h às 17h</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Barreto Junior &copy; Todos os direitos reservados | <a href="#">Política de privacidade</a></p>
+        <p>Desenvolvido por BJR</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp" aria-label="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

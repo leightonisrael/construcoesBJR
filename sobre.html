@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre a BJRCON - Barreto Junior Construções. Mais de 10 anos de história.">
+  <title>Sobre Nós - BJRCON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/icone.png" alt="Barreto Jr. Construções">
+        <span class="logo-text">Barreto Jr.<small>Construções</small></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html" class="active">Sobre nós</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">Empreendimentos <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="empreendimentos/sportclub.html">Sport Clube Extremoz</a>
+            <a href="empreendimentos/2014.html">Linha do tempo: 2014</a>
+            <a href="empreendimentos/2015.html">2015</a>
+            <a href="empreendimentos/2017.html">2017</a>
+            <a href="empreendimentos/2018.html">2018</a>
+            <a href="empreendimentos/2020.html">2020</a>
+            <a href="empreendimentos/2021.html">2021</a>
+            <a href="empreendimentos/2022.html">2022</a>
+            <a href="empreendimentos/2023.html">2023</a>
+            <a href="empreendimentos/2024.html">2024</a>
+          </div>
+        </div>
+        <a href="index.html#imoveis">Imóveis</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner Sobre -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Sobre Nós</h1>
+      <p>Mais de 10 anos construindo histórias e realizando o sonho da casa própria</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo Sobre -->
+  <section class="sobre-page-content">
+    <div class="container">
+      <div class="sobre-page-text">
+        <h2>Nossa História</h2>
+        <p>Há mais de 10 anos, o Grupo Barreto Junior transforma sonhos em realidade por meio da construção de lares e do desenvolvimento de comunidades. Atuando nos segmentos de construção civil, incorporação e urbanização, a empresa tem crescido de forma exponencial ao longo de sua trajetória, consolidando-se como referência no Rio Grande do Norte e tornando-se benchmark em todo o Nordeste brasileiro.</p>
+        <p>Unindo experiência, inovação e compromisso, entregamos empreendimentos de qualidade que geram valor para milhares de famílias e contribuem para o desenvolvimento das regiões onde atuamos. Com uma estrutura sólida, mais de 1.000 colaboradores, ampla capacidade operacional e um portfólio em constante expansão, seguimos construindo muito mais do que imóveis: criamos oportunidades, fortalecemos comunidades e ajudamos a transformar sonhos em histórias de vida.</p>
+      </div>
+      <img src="assets/images/boneco-bjr-semfundo.png" alt="Mascote BJRCON" class="team-img">
+    </div>
+  </section>
+
+  <!-- Números -->
+  <section class="stats-section" aria-label="Nossos números">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-count="10" data-suffix="+">10+</span>
+          <span class="stat-label">Anos de história</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="6000" data-prefix="+">+6.000</span>
+          <span class="stat-label">Unidades entregues</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="200" data-suffix=" mil m²">200 mil m²</span>
+          <span class="stat-label">De área construída</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="9">9</span>
+          <span class="stat-label">Bairros desenvolvidos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha do tempo -->
+  <section class="timeline-section section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nossa Trajetória</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Acompanhe a evolução dos nossos empreendimentos ano a ano</p>
+      </div>
+      <div class="timeline-grid">
+        <a href="empreendimentos/2014.html" class="timeline-item"><strong>2014</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2015.html" class="timeline-item"><strong>2015</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2017.html" class="timeline-item"><strong>2017</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2018.html" class="timeline-item"><strong>2018</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2020.html" class="timeline-item"><strong>2020</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2021.html" class="timeline-item"><strong>2021</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2022.html" class="timeline-item"><strong>2022</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2023.html" class="timeline-item"><strong>2023</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/2024.html" class="timeline-item"><strong>2024</strong><span>Sport Clube</span></a>
+        <a href="empreendimentos/sportclub.html" class="timeline-item"><strong><i class="fas fa-map-marked-alt"></i></strong><span>Conheça o bairro</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destaques -->
+  <section class="destaques-section section-padding">
+    <div class="container">
+      <div class="destaques-grid">
+        <div class="destaque-item">
+          <div class="destaque-icon"><i class="fas fa-house-circle-check" aria-hidden="true"></i></div>
+          <h3>Minha Casa Minha Vida</h3>
+          <p>Especialista no programa, atendendo as faixas 1, 2, 3 e 4.</p>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-icon"><i class="fas fa-key" aria-hidden="true"></i></div>
+          <h3>+6.000 Unidades Entregues</h3>
+          <p>Cada unidade construída pensando na melhor experiência do cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>BJRCON</h4>
+          <p>Barreto Junior Construções. Mais de 10 anos realizando o sonho da casa própria no Rio Grande do Norte.</p>
+          <div class="footer-social">
+            <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/construcoesbarretojr/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/barretojuniorconstrucoes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@barretojr.construcoes3534" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="index.html#imoveis">Imóveis</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone" style="color: var(--gold); margin-right: 6px;"></i> (84) 3015-7888</p>
+          <p style="margin-top: 10px;"><i class="fas fa-envelope" style="color: var(--gold); margin-right: 6px;"></i> analisedefinanciamentosbjr@gmail.com</p>
+          <p style="margin-top: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 6px;"></i> Av. Alcides Araújo, 1001 - Loteamento Moinho dos Ventos, Extremoz - RN</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Barreto Junior &copy; Todos os direitos reservados | <a href="#">Política de privacidade</a></p>
+        <p>Desenvolvido por BJR</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

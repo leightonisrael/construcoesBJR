@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sport Clube Extremoz - O maior bairro planejado da região metropolitana de Natal. BJRCON.">
+  <title>Sport Clube Extremoz - BJRCON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/icone.png" alt="Barreto Jr. Construções">
+        <span class="logo-text">Barreto Jr.<small>Construções</small></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="../index.html">Início</a>
+        <a href="../sobre.html">Sobre nós</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle active">Empreendimentos <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="sportclub.html">Sport Clube Extremoz</a>
+            <a href="2014.html">Linha do tempo: 2014</a>
+            <a href="2015.html">2015</a>
+            <a href="2017.html">2017</a>
+            <a href="2018.html">2018</a>
+            <a href="2020.html">2020</a>
+            <a href="2021.html">2021</a>
+            <a href="2022.html">2022</a>
+            <a href="2023.html">2023</a>
+            <a href="2024.html">2024</a>
+          </div>
+        </div>
+        <a href="../index.html#imoveis">Imóveis</a>
+        <a href="../contato.html">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="empreend-hero">
+    <div class="empreend-hero-overlay">
+      <h1>Sport Clube Extremoz</h1>
+      <p>O maior bairro planejado da região metropolitana de Natal</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="empreend-content">
+        <p>O Sport Clube é o maior bairro planejado da região metropolitana de Natal e o primeiro bairro totalmente desenvolvido pela Barreto Junior Construções.</p>
+        <p>Localizado em Extremoz, o empreendimento conta com toda a infraestrutura necessária para proporcionar qualidade de vida, conforto e praticidade aos moradores, com terminal de ônibus, monitoramento 24 horas, ruas pavimentadas, áreas comerciais e serviços essenciais distribuídos por toda a região</p>
+        <p>Com mais de 6.000 unidades comercializadas, o Sport Clube se consolidou como um dos maiores cases imobiliários do Rio Grande do Norte, reunindo diversos empreendimentos concluídos e entregues, transformando a realidade de milhares de famílias.</p>
+      </div>
+
+      <div class="empreend-features">
+        <div class="empreend-feature-card">
+          <img src="../assets/images/sportclub-lazer.jpg" alt="Área de lazer e esporte">
+          <div class="empreend-feature-text">
+            <h3><i class="fas fa-futbol"></i> Área de lazer e esporte</h3>
+            <p>Parquinho infantil, praças arborizadas e quadra de areia para prática de esportes.</p>
+          </div>
+        </div>
+        <div class="empreend-feature-card">
+          <img src="../assets/images/sportclub-lazer.jpg" alt="Praças e áreas verdes">
+          <div class="empreend-feature-text">
+            <h3><i class="fas fa-tree"></i> Praças e áreas verdes</h3>
+            <p>Espaços verdes planejados para convívio e lazer das famílias.</p>
+          </div>
+        </div>
+        <div class="empreend-feature-card">
+          <img src="../assets/images/sportclub-parque.jpg" alt="Terminal rodoviário e guarita">
+          <div class="empreend-feature-text">
+            <h3><i class="fas fa-bus"></i> Terminal rodoviário</h3>
+            <p>O bairro conta com terminal rodoviário em pleno funcionamento.</p>
+          </div>
+        </div>
+        <div class="empreend-feature-card">
+          <img src="../assets/images/sportclub-guarita.jpg" alt="Guarita e segurança">
+          <div class="empreend-feature-text">
+            <h3><i class="fas fa-shield-alt"></i> Guarita e segurança</h3>
+            <p>Guarita na entrada e equipe de segurança e socorro 24 horas por dia, além de câmeras de videomonitoramento nas ruas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa do Bairro -->
+  <section class="empreend-map section-padding" style="background: var(--off-white);">
+    <div class="container" style="text-align: center;">
+      <div class="section-title">
+        <h2>Mapa do Bairro</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Evolução do Sport Clube até 2024 — clique para ampliar</p>
+      </div>
+      <img src="../assets/images/mapa-2024.jpg" alt="Mapa do bairro Sport Clube Extremoz em 2024" class="empreend-year-map" onclick="openLightbox(this)" loading="lazy">
+      <div style="margin-top: 30px;">
+        <a href="2014.html" class="btn btn-outline"><i class="fas fa-history" style="margin-right: 8px;"></i> Veja a evolução ano a ano</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>BJRCON</h4>
+          <p>Barreto Junior Construções. Mais de 10 anos realizando o sonho da casa própria no Rio Grande do Norte.</p>
+          <div class="footer-social">
+            <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/construcoesbarretojr/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/barretojuniorconstrucoes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@barretojr.construcoes3534" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="../index.html">Início</a>
+            <a href="../sobre.html">Sobre nós</a>
+            <a href="../index.html#imoveis">Imóveis</a>
+            <a href="../contato.html">Contato</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone" style="color: var(--gold); margin-right: 6px;"></i> (84) 3015-7888</p>
+          <p style="margin-top: 10px;"><i class="fas fa-envelope" style="color: var(--gold); margin-right: 6px;"></i> analisedefinanciamentosbjr@gmail.com</p>
+          <p style="margin-top: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 6px;"></i> Av. Alcides Araújo, 1001 - Extremoz - RN</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Barreto Junior &copy; Todos os direitos reservados | <a href="#">Política de privacidade</a></p>
+        <p>Desenvolvido por BJR</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

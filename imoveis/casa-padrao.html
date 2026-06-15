@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casa Standard - BJRCON. Casa de 64,24m² com 2 quartos no Sport Clube, Extremoz/RN. Parcelas a partir de R$ 590,00.">
+  <title>Casa Standard - BJRCON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/icone.png" alt="Barreto Jr. Construções">
+        <span class="logo-text">Barreto Jr.<small>Construções</small></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="../index.html">Início</a>
+        <a href="../sobre.html">Sobre nós</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">Empreendimentos <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="../empreendimentos/sportclub.html">Sport Clube Extremoz</a>
+            <a href="../empreendimentos/2014.html">Linha do tempo: 2014</a>
+            <a href="../empreendimentos/2015.html">2015</a>
+            <a href="../empreendimentos/2017.html">2017</a>
+            <a href="../empreendimentos/2018.html">2018</a>
+            <a href="../empreendimentos/2020.html">2020</a>
+            <a href="../empreendimentos/2021.html">2021</a>
+            <a href="../empreendimentos/2022.html">2022</a>
+            <a href="../empreendimentos/2023.html">2023</a>
+            <a href="../empreendimentos/2024.html">2024</a>
+          </div>
+        </div>
+        <a href="../index.html#imoveis" class="active">Imóveis</a>
+        <a href="../contato.html">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="property-hero">
+    <img src="../assets/images/padrao-fachada.jpg" alt="Casa Standard - Sportclub, Extremoz/RN">
+    <div class="property-hero-overlay">
+      <span class="hero-badge">Linha Standard</span>
+      <h1>Casa Standard</h1>
+      <span class="hero-location"><i class="fas fa-map-marker-alt"></i> Sport Clube — Extremoz/RN</span>
+    </div>
+  </section>
+
+  <!-- Detalhes -->
+  <section class="property-detail section-padding">
+    <div class="container">
+      <div class="property-grid">
+        <div class="property-info">
+          <h1>Casa Standard</h1>
+          <p class="property-subtitle">Sport Clube — Extremoz/RN</p>
+
+          <div class="property-description">
+            <p>Casa ideal para quem busca conforto, praticidade e qualidade de vida.</p>
+          </div>
+
+          <div class="property-specs">
+            <div class="spec-item">
+              <i class="fas fa-ruler-combined"></i>
+              <span>64,24m² de área construída</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-bed"></i>
+              <span>2 quartos</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-bath"></i>
+              <span>1 banheiro</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-car"></i>
+              <span>1 vaga de garagem</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-couch"></i>
+              <span>Sala de estar/jantar</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-utensils"></i>
+              <span>Cozinha</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-tshirt"></i>
+              <span>Área de serviço coberta</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-archway"></i>
+              <span>Varanda</span>
+            </div>
+          </div>
+
+          <div class="property-gallery">
+            <h2>Conheça seu novo lar!</h2>
+            <div class="gallery-slider">
+              <div class="gallery-slides">
+                <img src="../assets/images/padrao-fachada.jpg" alt="Casa Standard - Fachada" class="active" onclick="openLightbox(this)">
+                <img src="../assets/images/padrao-sala.jpg" alt="Casa Standard - Sala" onclick="openLightbox(this)">
+                <img src="../assets/images/padrao-cozinha.jpg" alt="Casa Standard - Cozinha" onclick="openLightbox(this)">
+                <img src="../assets/images/padrao-quarto-1.jpg" alt="Casa Standard - Quarto 1" onclick="openLightbox(this)">
+                <img src="../assets/images/padrao-quarto-2.jpg" alt="Casa Standard - Quarto 2" onclick="openLightbox(this)">
+                <img src="../assets/images/padrao-banheiro.jpg" alt="Casa Standard - Banheiro social" onclick="openLightbox(this)">
+              </div>
+              <button type="button" class="gallery-arrow gallery-prev" aria-label="Imagem anterior"><i class="fas fa-chevron-left"></i></button>
+              <button type="button" class="gallery-arrow gallery-next" aria-label="Próxima imagem"><i class="fas fa-chevron-right"></i></button>
+              <div class="gallery-dots"></div>
+            </div>
+          </div>
+
+          <div class="property-diferenciais">
+            <h2>Diferenciais</h2>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Ruas Pavimentadas</li>
+              <li><i class="fas fa-check-circle"></i> Transporte Público</li>
+              <li><i class="fas fa-check-circle"></i> Amplo espaço interno</li>
+              <li><i class="fas fa-check-circle"></i> Monitoramento 24h</li>
+              <li><i class="fas fa-check-circle"></i> Área de lazer</li>
+              <li><i class="fas fa-check-circle"></i> Próximo a escolas e comércios</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="property-sidebar">
+          <div class="price-card">
+            <span class="price-label">Parcelas a partir de</span>
+            <span class="price-value">R$ 590,00</span>
+            <p class="price-info">Condições especiais e taxas competitivas para ajudar você a conquistar sua casa própria.</p>
+            <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="btn btn-gold btn-block" target="_blank">
+              <i class="fab fa-whatsapp"></i> Simule seu financiamento
+            </a>
+          </div>
+
+          <div class="sidebar-contact">
+            <h3>Descubra se você pode conquistar sua casa própria!</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 18px;">Preencha seus dados e saiba as melhores condições de financiamento disponíveis para você.</p>
+            <form onsubmit="handleContactForm(event)">
+              <div class="form-group">
+                <input type="text" name="nome" placeholder="Nome" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" name="whatsapp" placeholder="WhatsApp *" required>
+              </div>
+              <div class="form-group">
+                <textarea name="mensagem" rows="3" placeholder="Mensagem"></textarea>
+              </div>
+              <input type="hidden" name="imovel" value="Casa Standard">
+              <button type="submit" class="btn btn-whatsapp btn-block">
+                <i class="fab fa-whatsapp"></i> Enviar
+              </button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Entre já em contato e saiba mais!</h2>
+      <p>Converse com nossos consultores e descubra as melhores condições para você e sua família.</p>
+      <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="btn btn-gold btn-lg" target="_blank">
+        <i class="fab fa-whatsapp"></i> Simule seu financiamento
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>BJRCON</h4>
+          <p>Barreto Junior Construções. Mais de 10 anos realizando o sonho da casa própria no Rio Grande do Norte.</p>
+          <div class="footer-social">
+            <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/construcoesbarretojr/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/barretojuniorconstrucoes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@barretojr.construcoes3534" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="../index.html">Início</a>
+            <a href="../sobre.html">Sobre nós</a>
+            <a href="../index.html#imoveis">Imóveis</a>
+            <a href="../contato.html">Contato</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone" style="color: var(--gold); margin-right: 6px;"></i> (84) 3015-7888</p>
+          <p style="margin-top: 10px;"><i class="fas fa-envelope" style="color: var(--gold); margin-right: 6px;"></i> analisedefinanciamentosbjr@gmail.com</p>
+          <p style="margin-top: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 6px;"></i> Av. Alcides Araújo, 1001 - Extremoz - RN</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Barreto Junior &copy; Todos os direitos reservados | <a href="#">Política de privacidade</a></p>
+        <p>Desenvolvido por BJR</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/message/ZMNHPSS7HT7BP1?autoload=1&app_absent=0" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
