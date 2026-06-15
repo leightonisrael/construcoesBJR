@@ -1,0 +1,16 @@
+# Configurações locais do Claude Code
+.claude/
+
+# Pastas com fotos-fonte (originais) — o site usa as cópias em assets/images/
+gold/
+premier/
+standard/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e temporários
+*.log
+*.tmp
