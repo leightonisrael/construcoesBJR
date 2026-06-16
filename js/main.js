@@ -74,7 +74,7 @@ function handleContactForm(e) {
   }
   text += ' Meu WhatsApp: ' + whatsapp;
 
-  var url = 'https://api.whatsapp.com/send?phone=5584999999999&text=' + encodeURIComponent(text);
+  var url = 'https://api.whatsapp.com/send?phone=558481808000&text=' + encodeURIComponent(text);
   window.open(url, '_blank');
 }
 
