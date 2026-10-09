@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b2a4a">
   <meta name="description" content="Casa Standard - BJRCON. Casa de 64,24m² com 2 quartos no Sport Clube, Extremoz/RN. Parcelas a partir de R$ 590,00.">
   <title>Casa Standard - BJRCON</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" type="image/png" href="../assets/images/favicon.png">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/3d.css">
+  <link rel="stylesheet" href="../css/tour360.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -54,6 +65,18 @@
       <span class="hero-badge">Linha Standard</span>
       <h1>Casa Standard</h1>
       <span class="hero-location"><i class="fas fa-map-marker-alt"></i> Sport Clube — Extremoz/RN</span>
+    </div>
+  </section>
+
+  <!-- Construção 3D no scroll -->
+  <div class="build3d-head">
+    <span class="build3d-eyebrow"><i class="fas fa-cube"></i> Casa Standard em 3D</span>
+    <h2>Acompanhe a <span>construção</span> da sua casa</h2>
+    <p>Role a página e veja a Casa Standard ser erguida etapa por etapa, da fundação à entrega.</p>
+  </div>
+  <section class="build3d" data-house="standard" data-mode="property" data-dusk="false" aria-label="Animação 3D da construção da Casa Standard">
+    <div class="build3d-sticky">
+      <canvas class="build3d-canvas" aria-hidden="true"></canvas>
     </div>
   </section>
 
@@ -168,6 +191,18 @@
     </div>
   </section>
 
+  <!-- Tour 360° -->
+  <section class="tour360-section section-padding" id="tour-360">
+    <div class="container">
+      <div class="section-title">
+        <h2>Tour 360° pela Casa Standard</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Arraste para olhar ao redor e navegue entre os ambientes</p>
+      </div>
+      <div class="tour360" data-house="standard"></div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
@@ -211,7 +246,7 @@
       </div>
       <div class="footer-bottom">
         <p>Barreto Junior &copy; Todos os direitos reservados | <a href="/politica-de-privacidade">Política de privacidade</a></p>
-        <p>Desenvolvido por BJR</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/israel-hall-leighton/" target="_blank" rel="noopener">Israel Leighton</a></p>
       </div>
     </div>
   </footer>
@@ -225,5 +260,10 @@
   </div>
 
   <script src="../js/main.js"></script>
+  <script type="module" src="../js/3d/build-scroll.js"></script>
+  <script type="module">
+    import { initTour360 } from '../js/3d/tour360.js';
+    document.querySelectorAll('.tour360').forEach(initTour360);
+  </script>
 </body>
 </html>

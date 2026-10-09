@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b2a4a">
   <meta name="description" content="BJRCON - Barreto Junior Construções. Mais de 10 anos realizando o sonho da casa própria em Extremoz/RN. Casas Standard, Gold e Premier com parcelas a partir de R$ 590,00 e financiamento pelo Minha Casa Minha Vida.">
   <meta property="og:title" content="BJRCON - Barreto Junior Construções">
   <meta property="og:description" content="Mais de 10 anos e +6.000 unidades entregues em Extremoz/RN. Casas com parcelas a partir de R$ 590,00 e financiamento pelo Minha Casa Minha Vida.">
@@ -15,6 +16,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/3d.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -80,6 +90,22 @@
             <span>já receberam suas chaves</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção 3D no scroll -->
+  <div class="build3d-head" id="obra-3d">
+    <span class="build3d-eyebrow"><i class="fas fa-cube"></i> Experiência 3D</span>
+    <h2>Veja sua casa <span>sair do papel</span></h2>
+    <p>Role a página e acompanhe, etapa por etapa, como construímos cada casa BJRCON — da fundação à entrega das chaves.</p>
+  </div>
+  <section class="build3d" data-house="gold" data-mode="home" aria-label="Animação 3D da construção de uma casa BJRCON">
+    <div class="build3d-sticky">
+      <canvas class="build3d-canvas" aria-hidden="true"></canvas>
+      <div class="build3d-cta">
+        <a href="#imoveis" class="btn btn-gold">Conheça os imóveis</a>
+        <a href="https://wa.me/5584986288215?text=Ol%C3%A1%2C%20vim%20pelo%20Site%2C%20gostaria%20de%20ter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20im%C3%B3veis!" class="btn btn-navy" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Simule seu financiamento</a>
       </div>
     </div>
   </section>
@@ -333,7 +359,7 @@
       </div>
       <div class="footer-bottom">
         <p>Barreto Junior &copy; Todos os direitos reservados | <a href="/politica-de-privacidade">Política de privacidade</a></p>
-        <p>Desenvolvido por BJR</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/israel-hall-leighton/" target="_blank" rel="noopener">Israel Leighton</a></p>
       </div>
     </div>
   </footer>
@@ -344,5 +370,6 @@
   </a>
 
   <script src="js/main.js"></script>
+  <script type="module" src="js/3d/build-scroll.js"></script>
 </body>
 </html>

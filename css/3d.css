@@ -1,0 +1,131 @@
+/* ============================================
+   BJRCON 3D — seção "construção no scroll"
+   ============================================ */
+.build3d-head {
+  background: var(--navy-gradient);
+  color: var(--white);
+  text-align: center;
+  padding: 80px 24px 40px;
+}
+.build3d-head .build3d-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-heading); font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold-light);
+  background: rgba(212,147,29,0.12); border: 1px solid rgba(212,147,29,0.35);
+  padding: 7px 14px; border-radius: 999px; margin-bottom: 18px;
+}
+.build3d-head h2 { color: var(--white); font-size: clamp(1.7rem, 3.6vw, 2.6rem); margin-bottom: 12px; }
+.build3d-head h2 span { color: var(--gold-light); }
+.build3d-head p { max-width: 640px; margin: 0 auto; color: rgba(255,255,255,0.75); }
+
+.build3d { position: relative; height: 480vh; background: #d7ecfa; }
+.build3d[data-mode="property"] { height: 400vh; }
+.build3d--off { display: none; }
+.build3d-sticky { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+.build3d-canvas { display: block; width: 100%; height: 100%; outline: none; }
+
+.build3d-ui { position: absolute; inset: 0; pointer-events: none; font-family: var(--font-body); }
+
+/* lista de etapas (desktop) */
+.build3d-steps {
+  position: absolute; left: max(24px, calc((100vw - 1200px) / 2 + 24px)); top: 50%;
+  transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 16px 14px; border-radius: var(--radius-lg);
+  background: rgba(15,27,51,0.55);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: var(--shadow-lg);
+}
+.build3d-steps li {
+  display: flex; align-items: center; gap: 12px;
+  padding: 7px 10px; border-radius: 10px;
+  color: rgba(255,255,255,0.5); font-size: 0.84rem; font-weight: 600;
+  transition: color .35s ease, background .35s ease;
+  position: relative;
+}
+.build3d-steps .n {
+  font-family: var(--font-heading); font-size: 0.7rem; font-weight: 800;
+  width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  transition: all .35s ease;
+}
+.build3d-steps li.is-done { color: rgba(255,255,255,0.8); }
+.build3d-steps li.is-done .n { background: rgba(212,147,29,0.25); border-color: var(--gold); color: var(--gold-light); }
+.build3d-steps li.is-active { color: var(--white); background: rgba(255,255,255,0.08); }
+.build3d-steps li.is-active .n { background: var(--gold); border-color: var(--gold); color: var(--navy-dark); box-shadow: 0 0 0 5px rgba(212,147,29,0.25); }
+
+/* cartão da etapa atual */
+.build3d-card {
+  position: absolute; right: max(24px, calc((100vw - 1200px) / 2 + 24px)); bottom: 48px;
+  width: min(380px, calc(100% - 48px));
+  padding: 22px 24px 20px; border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.86);
+  -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.7);
+  box-shadow: var(--shadow-xl);
+}
+.build3d-card.swap { animation: b3dSwap .5s ease; }
+@keyframes b3dSwap { from { transform: translateY(12px); } to { transform: none; } }
+.build3d-kicker {
+  font-family: var(--font-heading); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--gray-500);
+}
+.build3d-kicker b { color: var(--gold-dark); }
+.build3d-title { font-size: 1.35rem; margin: 6px 0 6px; color: var(--navy); }
+.build3d-text { font-size: 0.92rem; color: var(--gray-700); line-height: 1.6; }
+.build3d-bar { margin-top: 14px; height: 4px; border-radius: 4px; background: rgba(27,42,74,0.1); overflow: hidden; }
+.build3d-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--gold-dark), var(--gold-light)); transform-origin: left; transform: scaleX(0); }
+
+/* medidor de progresso */
+.build3d-meter {
+  position: absolute; right: max(24px, calc((100vw - 1200px) / 2 + 24px)); top: 96px;
+  display: flex; flex-direction: column; align-items: flex-end;
+  color: var(--navy-dark); text-shadow: 0 1px 12px rgba(255,255,255,0.6);
+}
+.build3d-meter .m-val { font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.build3d-meter small { font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: var(--navy-light); }
+
+.build3d-hint {
+  position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 18px; border-radius: 999px;
+  background: rgba(15,27,51,0.7); color: var(--white);
+  font-family: var(--font-heading); font-size: 0.78rem; font-weight: 600; letter-spacing: 1px;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  transition: opacity .4s ease, transform .4s ease;
+  animation: b3dBob 2s ease-in-out infinite;
+}
+.build3d-hint.is-hidden { opacity: 0; transform: translate(-50%, 10px); animation: none; }
+@keyframes b3dBob { 50% { transform: translate(-50%, -6px); } }
+
+.build3d-badge {
+  position: absolute; left: max(24px, calc((100vw - 1200px) / 2 + 24px)); bottom: 20px;
+  font-size: 0.68rem; font-weight: 600; letter-spacing: .5px;
+  color: rgba(15,27,51,0.65); background: rgba(255,255,255,0.6);
+  padding: 4px 10px; border-radius: 999px;
+}
+
+/* CTA final (home) */
+.build3d-cta {
+  position: absolute; left: 50%; top: 110px; transform: translate(-50%, 10px);
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity .5s ease, transform .5s ease;
+}
+.build3d--done .build3d-cta { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+
+@media (max-width: 900px) {
+  .build3d-steps { display: none; }
+  .build3d-card { left: 16px; right: 16px; width: auto; bottom: 16px; padding: 16px 18px; }
+  .build3d-title { font-size: 1.1rem; }
+  .build3d-text { font-size: 0.85rem; }
+  .build3d-meter { right: 16px; top: 80px; }
+  .build3d-hint { bottom: auto; top: 84px; left: 16px; transform: none; animation: none; }
+  .build3d-hint.is-hidden { transform: none; }
+  .build3d-badge { left: 16px; bottom: auto; top: 140px; }
+  .build3d-cta { top: auto; bottom: 190px; width: calc(100% - 32px); }
+  .build3d { height: 420vh; }
+  .build3d[data-mode="property"] { height: 360vh; }
+  .build3d-head { padding: 60px 16px 32px; }
+}
